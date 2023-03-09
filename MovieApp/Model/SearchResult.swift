@@ -7,7 +7,7 @@
 
 import Foundation
 struct SearchResult: Codable {
-    let search: [Item]
+    let search: [MovieInfo]
     let totalResults, response: String
     enum CodingKeys: String, CodingKey {
         case search = "Search"
@@ -16,7 +16,7 @@ struct SearchResult: Codable {
     }
 }
 
-struct Item: Codable {
+struct MovieInfo: Codable {
     let title, year, imdbID: String
     let type: TypeEnum
     let poster: String
