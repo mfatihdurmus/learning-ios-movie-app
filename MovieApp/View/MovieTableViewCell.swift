@@ -44,7 +44,6 @@ class MovieTableViewCell: UITableViewCell {
            }
        }
 }
-
 /*
 extension UIImageView {
     func loadFrom(URLAddress: String) {
