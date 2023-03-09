@@ -18,6 +18,7 @@
 		9DA5F2D929BA248A004A08C0 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5F2D829BA248A004A08C0 /* SearchResult.swift */; };
 		9DA5F2DB29BA2930004A08C0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5F2DA29BA2930004A08C0 /* SearchViewModel.swift */; };
 		9DA5F2DD29BA293F004A08C0 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5F2DC29BA293F004A08C0 /* DetailViewModel.swift */; };
+		9DA5F2DF29BA373D004A08C0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5F2DE29BA373D004A08C0 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9DA5F2D829BA248A004A08C0 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		9DA5F2DA29BA2930004A08C0 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		9DA5F2DC29BA293F004A08C0 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		9DA5F2DE29BA373D004A08C0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				9DA5F2BE29BA1ADD004A08C0 /* SceneDelegate.swift */,
 				9DA5F2BC29BA1ADD004A08C0 /* AppDelegate.swift */,
 				9DA5F2C029BA1ADD004A08C0 /* ViewController.swift */,
+				9DA5F2DE29BA373D004A08C0 /* MovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				9DA5F2C129BA1ADD004A08C0 /* ViewController.swift in Sources */,
 				9DA5F2DB29BA2930004A08C0 /* SearchViewModel.swift in Sources */,
+				9DA5F2DF29BA373D004A08C0 /* MovieTableViewCell.swift in Sources */,
 				9DA5F2BD29BA1ADD004A08C0 /* AppDelegate.swift in Sources */,
 				9DA5F2D529BA2001004A08C0 /* Movie.swift in Sources */,
 				9DA5F2D929BA248A004A08C0 /* SearchResult.swift in Sources */,
