@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate {
             
         searchResultsTable.rx.modelSelected(MovieInfo.self).subscribe(onNext: { item in
         print("SelectedItem: \(item)")
-            }).disposed(by: disposeBag)
-        }
+        }).disposed(by: disposeBag)
+    }
 }
 

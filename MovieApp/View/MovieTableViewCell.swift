@@ -35,12 +35,16 @@ class MovieTableViewCell: UITableViewCell {
                let url = URL(string: item.poster)
                
                DispatchQueue.global().async {
-                   let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                   DispatchQueue.main.async {
-                       self.posterImageView.image = UIImage(data: data!)
+                   let data = try? Data(contentsOf: url!)
+                   
+                   if let data = data {
+                       let image = UIImage(data: data)
+                       DispatchQueue.main.async {
+                           self.posterImageView.image = image
+                           self.posterImageView.contentMode = .scaleAspectFit
+                       }
                    }
                }
-
            }
        }
 }
