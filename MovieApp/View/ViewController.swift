@@ -23,10 +23,6 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        //requestData(id: "tt1285016")
-        //requestSearch(query: "Planet")
-        
         searchResultsTable.rx.setDelegate(self).disposed(by: disposeBag)
         setupBindings()
     }
@@ -37,8 +33,19 @@ class ViewController: UIViewController, UITableViewDelegate {
         }.disposed(by: disposeBag)
             
         searchResultsTable.rx.modelSelected(MovieInfo.self).subscribe(onNext: { item in
-        print("SelectedItem: \(item)")
+            self.performSegue(withIdentifier: "showDetailSegue", sender: item)
         }).disposed(by: disposeBag)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailSegue" {
+            // as -- casting
+            let destinationVC = segue.destination as! DetailsViewController
+            let item = sender as? MovieInfo
+            if let item = item {
+                destinationVC.imdbID = item.imdbID
+            }
+        }
     }
 }
 
